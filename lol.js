@@ -24,6 +24,13 @@ $(document).ready(function() {
       function(response) {
         console.log(response);
         $("#gif").append("<img src=" + response.data[0].images.fixed_width_downsampled.url + ">");
+    
+    $.getJSON("https://ajar-target.gomix.me/arrivals?stop_id=623", 
+      function(response){ 
+          console.log(response)
+        $("#gif").append(Object.keys(function)
+          
+      })
       });
   });
 
